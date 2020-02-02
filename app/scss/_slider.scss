@@ -1,0 +1,24 @@
+@import 'variables';
+
+.slider-section {
+    // #carouselExampleFade{
+    //     top: 80px;
+    // }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
+    }
+    .carousel-item {
+        img {
+            height: 100vh;
+            object-fit: cover;
+        }
+    }
+    .carousel-caption {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        padding: 15px;
+    }
+}

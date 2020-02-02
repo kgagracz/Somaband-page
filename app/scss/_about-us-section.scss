@@ -1,0 +1,41 @@
+@import 'variables';
+#about-us {
+    height: 100vh;
+    background-color: $background-color;
+    top: $main-nav-height;
+    position: relative;
+
+    .container {
+        width: 90%;
+        height: 80vh;
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: space-between;
+    }
+    h1 {
+        text-align: center;
+        color: $primary-color;
+    }
+    p {
+        color: $secondary-font-color;
+    }
+    .container-inner {
+        .party-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            img {
+                width: 90%;
+                object-fit: cover;
+            }
+            h2 {
+                margin: 15px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $secondary-font-color;
+            }
+        }
+    }
+}
