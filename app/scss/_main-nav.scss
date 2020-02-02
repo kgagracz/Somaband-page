@@ -1,14 +1,17 @@
 @import 'variables';
 
-nav {
+
+.navbar {
     background-color: $background-color;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 10;
     height: $main-nav-height;
+    z-index: 10;
+    padding: 0;
     .logo {
-        height: 70px;
+        height: 60px;
+        width: auto;
         margin: 5px;
         justify-self: center;
         align-self: center;

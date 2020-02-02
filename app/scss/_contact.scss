@@ -1,48 +1,64 @@
-@import 'variables';
+@import "variables";
 #contact {
-    height: 100vh;
-    width: 100%;
+  min-height: 100vh;
+  width: 100%;
 
-    address {
-        height: 100%;
-        background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,63,9,1) 100%);
-    }
-    .container-fluid {
-        height: 100%;
-        
-        .footer-logo-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            height: 50%;
+  address {
+    height: 100%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(121, 63, 9, 1) 100%
+    );
+  }
+  .container-fluid {
+    height: 100%;
 
-            h2 {
-                width: 100%;
-                text-align: center;
-                color: $secondary-font-color;
-            }
-            .icon-container {
-                height: 30%;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+    .footer-logo-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
 
-                .icon-link {
-                    margin: 0 20px;
+      h2 {
+        width: 100%;
+        text-align: center;
+        color: $secondary-font-color;
+        margin: 20px;
+      }
+      .icon-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
 
-                    i {
-                        color: $primary-color;
-                    }
+        .icon-link {
+          margin: 0 20px;
 
-                    i:hover {
-                        color: $secondary-font-color;
-                    }
-                }
-            }
+          i {
+            color: $primary-color;
+          }
+
+          i:hover {
+            color: $secondary-font-color;
+          }
         }
+      }
     }
+  }
+}
 
+@media all and (max-width: 420px) {
+  .footer-logo-container__heading {
+    font-size: 1.2rem;
+  }
+  .contact-logo {
+    width: 50%;
+  }
+  .fa-3x {
+    font-size: 2em;
+  }
 }
