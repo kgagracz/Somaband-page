@@ -46,9 +46,20 @@
     position: static;
     top: 0; } }
 
+.slider-section .carousel-control-container {
+  height: 100%;
+  background-color: gray;
+  border-radius: 10px; }
+
 .slider-section .carousel-control-prev,
 .slider-section .carousel-control-next {
-  width: 5%; }
+  width: 5%;
+  background-color: #b98c3e;
+  opacity: 0.1; }
+
+.slider-section .carousel-control-prev:hover,
+.slider-section .carousel-control-next:hover {
+  opacity: 0.5; }
 
 .slider-section .carousel-item img {
   height: 100vh;
