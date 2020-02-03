@@ -39,6 +39,9 @@
 }
 
 @media all and (max-width: 420px) {
+    #about-us {
+        margin-top: 0;
+    }
     .container__heading {
         font-size: 25px;
         margin: 0;
